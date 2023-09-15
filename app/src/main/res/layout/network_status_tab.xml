@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_dark_material_dark"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/default_background"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/ns_connected_textview"
+                style="@style/HT_FontBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:padding="2dp"
+                android:singleLine="true"
+                android:text="@string/default_connected" />
+
+            <TextView
+                android:id="@+id/ns_interval_textview"
+                style="@style/HT_FontBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="2dp"
+                android:singleLine="true"
+                android:text="@string/default_interval" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/ns_ip_textView"
+                    style="@style/HT_FontBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:singleLine="true"
+                    android:text="@string/default_ip" />
+
+                <TextView
+                    android:id="@+id/ns_speed_textView"
+                    style="@style/HT_FontBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:singleLine="true"
+                    android:text="@string/default_speed" />
+
+                <TextView
+                    android:id="@+id/ns_number_of_available_network_textView"
+                    style="@style/HT_FontBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:singleLine="true"
+                    android:text="@string/default_wn" />
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/refresh_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.25"
+                android:background="@drawable/default_button_selector"
+                android:gravity="center"
+                android:padding="2dp"
+                android:src="@drawable/refresh" />
+
+            <ImageButton
+                android:id="@+id/scanning_time_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.25"
+                android:background="@drawable/default_button_selector"
+                android:gravity="center"
+                android:padding="2dp"
+                android:src="@drawable/refresh_time" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/network_status_listview"
+        style="@style/NetworksListStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/divider"
+        android:dividerHeight="1px" />
+
+</LinearLayout>

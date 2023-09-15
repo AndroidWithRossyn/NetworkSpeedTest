@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".activity.PrivacyPolicyActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_below="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent">
+
+        <RelativeLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Privacy Policy"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_above="@+id/layout_how_works"
+        android:layout_marginTop="25dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+<!--            <androidx.appcompat.widget.Toolbar-->
+<!--                android:id="@+id/toolbar"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@android:color/transparent">-->
+
+<!--                <RelativeLayout-->
+<!--                    android:id="@+id/ll1"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_marginBottom="20dp"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    &lt;!&ndash;                <ImageView&ndash;&gt;-->
+<!--                    &lt;!&ndash;                    android:id="@+id/back"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                    android:layout_width="40dp"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                    android:layout_height="30dp"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                    android:layout_margin="5dp"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                    android:layout_marginLeft="10dp"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                    android:padding="5dp"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                    android:src="@drawable/ic_white_arrow" />&ndash;&gt;-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_centerInParent="true"-->
+<!--                        android:text="@string/privacy_policy"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:textStyle="bold" />-->
+<!--                </RelativeLayout>-->
+<!--            </androidx.appcompat.widget.Toolbar>-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="250dp"
+                android:textStyle="bold"
+                android:text="@string/privacy_brief"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/layout_how_works"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:id="@+id/agree_btn"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:background="@drawable/blank"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:text="Agree"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:id="@+id/native_ads"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

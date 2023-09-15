@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gradient"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".activity.VehicleSpeedTestActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent">
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="10dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_white_arrow"
+                app:tint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:gravity="start"
+                android:text="@string/vehicle_speed"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_above="@+id/rl1">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/text_vehicle"
+                android:layout_width="300dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:padding="5dp"
+                app:tint="@color/white"
+                android:src="@drawable/blackish" />
+            <!--            <com.github.anastr.speedviewlib.DeluxeSpeedView-->
+            <!--                android:id="@+id/deluxeSpeedView"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_marginBottom="30dp"-->
+            <!--                android:layout_marginRight="30dp"-->
+            <!--                android:layout_marginTop="30dp"-->
+            <!--                android:layout_marginLeft="30dp"-->
+            <!--                android:layout_height="match_parent"-->
+            <!--                android:gravity="center_vertical"-->
+
+            <!--                />-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/textViewLiveSpeedometer"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="Live Speedometer"-->
+            <!--                android:textColor="@color/white"-->
+            <!--                android:layout_gravity="center_horizontal"-->
+            <!--                android:textAppearance="@style/TextAppearance.AppCompat.Button"-->
+            <!--                android:layout_below="@+id/deluxeSpeedView"-->
+            <!--                android:layout_centerHorizontal="true"-->
+            <!--                android:layout_marginTop="56dp" />-->
+            <TextView
+                android:id="@+id/info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:textSize="20sp" />
+
+            <in.unicodelabs.kdgaugeview.KdGaugeView
+                android:id="@+id/speedMeter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:divisionCircleColor="#F1BE06"
+                app:speedTextColor="@color/white"
+                app:unitOfMeasurementTextColor="@color/white"
+                android:layout_marginTop="10dp"
+                app:speedLimitTextColor="#58BCF1"
+                app:maxSpeed="180"
+                app:speed_limit="60" />
+
+<!--            <in.unicodelabs.kdgaugeview.KdGaugeView-->
+<!--                android:id="@+id/speedLimitMeter"-->
+<!--                android:layout_width="250dp"-->
+<!--                android:layout_height="250dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginTop="20sp"-->
+<!--                app:maxSpeed="120"-->
+<!--                app:speed="65"-->
+<!--                app:speed_limit="60"-->
+<!--                app:unitOfMeasurementTextSize="20dp" />-->
+
+            <ImageView
+                android:layout_width="300sp"
+                android:layout_height="150sp"
+                android:layout_gravity="center"
+                app:tint="#58BCF1"
+                android:src="@drawable/car99" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/native_ads"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

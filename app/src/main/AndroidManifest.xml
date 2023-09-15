@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.networkdigitally.analyzertools.speedtool">
+    <uses-permission android:name="android.permission.STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NetworkSpeedTest"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name="com.networkdigitally.analyzertools.speedtool.activity.ThankyouActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name="com.networkdigitally.analyzertools.speedtool.activity.ExitActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name="com.networkdigitally.analyzertools.speedtool.SettingsActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            android:parentActivityName="com.networkdigitally.analyzertools.speedtool.activity.MainActivity"
+            android:theme="@style/AppTheme"
+            tools:ignore="UnusedAttribute" />
+        <activity
+            android:name="com.networkdigitally.analyzertools.speedtool.activity.MapActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.networkdigitally.analyzertools.speedtool.activity.MainActivity"
+            android:theme="@style/AppTheme.NoStatusBar"
+            tools:ignore="UnusedAttribute" />
+        <activity
+            android:name="com.networkdigitally.analyzertools.speedtool.activity.GraphActivity"
+            android:label="@string/action_graphs"
+            android:parentActivityName="com.networkdigitally.analyzertools.speedtool.activity.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="UnusedAttribute" />
+
+        <service
+            android:name="com.networkdigitally.analyzertools.speedtool.SoundService"
+            android:enabled="true"
+            android:exported="true" /> <!-- <meta-data -->
+        <!-- android:name="com.google.android.gms.ads.APPLICATION_ID" -->
+        <!-- android:value="ca-app-pub-3940256099942544~3347511713" /> -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key" />
+
+        <activity
+            android:name="com.networkdigitally.analyzertools.speedtool.activity.MainActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.networkdigitally.analyzertools.speedtool.activity.MapNavigationActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name="com.networkdigitally.analyzertools.speedtool.activity.VehicleSpeedTestActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name="com.networkdigitally.analyzertools.speedtool.activity.SoundTestActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name="com.networkdigitally.analyzertools.speedtool.activity.IPAddressTestActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name="com.networkdigitally.analyzertools.speedtool.activity.InternetSpeedTestActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name="com.networkdigitally.analyzertools.speedtool.activity.PrivacyPolicyActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name="com.networkdigitally.analyzertools.speedtool.activity.DashboardActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name="com.networkdigitally.analyzertools.speedtool.activity.GetStartedActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name="com.networkdigitally.analyzertools.speedtool.activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" /> <!-- Receivers -->
+        <receiver
+            android:name="com.networkdigitally.analyzertools.speedtool.widgets.ExtensiveWidgetProvider"
+            android:exported="true"
+            android:label="@string/widget_label_extensive">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/extensive_widget" />
+        </receiver>
+        <receiver
+            android:name="com.networkdigitally.analyzertools.speedtool.widgets.TimeWidgetProvider"
+            android:exported="true"
+            android:label="@string/widget_label_time">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/time_widget" />
+        </receiver>
+        <receiver
+            android:name="com.networkdigitally.analyzertools.speedtool.widgets.SimpleWidgetProvider"
+            android:exported="true"
+            android:label="@string/widget_label_simple">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/simple_widget" />
+        </receiver>
+        <receiver
+            android:name="com.networkdigitally.analyzertools.speedtool.widgets.ClassicTimeWidgetProvider"
+            android:exported="true"
+            android:label="@string/widget_label_classic">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/time_widget_classic" />
+        </receiver>
+        <receiver
+            android:name="com.networkdigitally.analyzertools.speedtool.AlarmReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.LOCALE_CHANGED" />
+            </intent-filter>
+        </receiver> <!-- Services -->
+        <service
+            android:name="com.networkdigitally.analyzertools.speedtool.notifications.WeatherNotificationService"
+            android:description="@string/notification_service_description"
+            android:exported="false" /> <!-- Providers -->
+        <provider
+            android:name="com.networkdigitally.analyzertools.speedtool.utils.StubContentProvider"
+            android:authorities="com.networkdigitally.analyzertools.speedtool.authority"
+            android:exported="true" />
+    </application>
+
+</manifest>

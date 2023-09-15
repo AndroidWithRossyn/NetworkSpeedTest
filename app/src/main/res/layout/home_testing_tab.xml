@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_dark_material_dark"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/default_background"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/ht_connected_textview"
+                style="@style/HT_FontBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:singleLine="true"
+                android:text="@string/default_connected" />
+
+            <TextView
+                android:id="@+id/ht_filter_textview"
+                style="@style/HT_FontBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="2dp"
+                android:singleLine="true"
+                android:text="@string/ci_filter_bar" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:paddingBottom="4dp">
+
+            <ImageButton
+                android:id="@+id/add_room_button"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/add" />
+
+            <ImageButton
+                android:id="@+id/edit_room_button"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/edit" />
+
+            <ImageButton
+                android:id="@+id/del_room_button"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/delete" />
+
+            <ImageButton
+                android:id="@+id/def_room_button"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/restore" />
+
+            <Button
+                android:id="@+id/home_testing_test_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/default_button_test_selector"
+                android:text="@string/ht_test_button"
+                android:textColor="@color/dark_white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary_dark_material_dark"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/ht_strength_static_textView"
+            style="@style/HT_FontStaticStrengthSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/ht_strength_static_textView" />
+
+        <TextView
+            android:id="@+id/ht_last_static_textView"
+            style="@style/HT_FontStaticStrengthSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/ht_speed_static_textView" />
+
+    </LinearLayout>
+
+    <View style="@style/Divider" />
+
+    <ListView
+        android:id="@+id/home_rooms_listview"
+        style="@style/NetworksListStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null" />
+
+</LinearLayout>

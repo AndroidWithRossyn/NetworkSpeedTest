@@ -1,0 +1,223 @@
+<resources>
+    <string name="app_name">CyperTools - Network Analyzer</string>
+    <string name="title_section1">1</string>
+    <string name="title_section2">2</string>
+    <string name="title_section3">3</string>
+    <string name="title_section4">4</string>
+    <string name="title_section5">5</string>
+    <string name="activity_infobull">This is a custom message box</string>
+    <string name="activity_infotitle">About CyperTools - Network Analyzer</string>
+    <string name="activity_infobutton">Ok</string>
+    <string name="activity_recStartErr">Unable to start recording</string>
+    <string name="activity_recBusyErr">Recorder is busy or permission to record is prohibited</string>
+    <string name="activity_recFileErr">Can not create file</string>
+    <!-- activity_main.xml -->
+    <string name="activity_minlabel">Minimum</string>
+    <string name="activity_avglabel">Average</string>
+    <string name="activity_maxlabel">Maximum</string>
+    <string name="activity_curlabel">Real Time</string>
+    <!-- dialog_info.xml -->
+    <string name="info_0db">0dB : Most people just hear a low noise.</string>
+    <string name="info_30db">30dB～40dB it\'s the ideal calm.</string>
+    <string name="info_50db">50dB and more: affects rest and sleep.</string>
+    <string name="info_70db">70dB and more: can affect learning and work.</string>
+    <string name="info_90db">90dB and more affect audition.</string>
+    <string name="info_150db">150dB : A sudden exposure to a sound environment of 150dB, will break the eardrums. The audition will be completely lost.</string>
+
+    <string name="title_section_name1">Connection Info</string>
+    <string name="title_section_name2">Networks Status</string>
+    <string name="title_section_name3">Home Testing</string>
+    <string name="title_section_name4">Channel Interference</string>
+    <string name="title_section_name5">Strength Graph</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="pref_refresh_rate_label">Refresh Rate</string>
+    <string name="pref_refresh_rate_key" translatable="false">refreshRate</string>
+    <string name="pref_refresh_rate_label_0" translatable="false">AS FAST AS POSSIBLE</string>
+    <string name="pref_refresh_rate_label_2" translatable="false">2</string>
+    <string name="pref_refresh_rate_label_3" translatable="false">3</string>
+    <string name="pref_refresh_rate_label_5" translatable="false">5</string>
+    <string name="pref_refresh_rate_label_10" translatable="false">10</string>
+    <string name="pref_refresh_rate_0" translatable="false">0</string>
+    <string name="pref_refresh_rate_2" translatable="false">2</string>
+    <string name="pref_refresh_rate_3" translatable="false">3</string>
+    <string name="pref_refresh_rate_5" translatable="false">5</string>
+    <string name="pref_refresh_rate_10" translatable="false">10</string>
+
+    <string name="title_activity_settings">Settings</string>
+
+    <string name="two_strings_textView">%1$s [%2$s] </string>
+
+    <string name="percent_textView">%1$s %%</string>
+    <string name="Mbps_textView">%1$s Mbps</string>
+    <string name="dBm_textView">%1$s dBm</string>
+    <string name="connected_bar">Connected: %1$s</string>
+    <string name="valuation">%1$d / 10 </string>
+
+    <string name="ns_title_dialog_refresh_rate">Select automatic scanning time (s)</string>
+
+    <string name="ns_channel_static_textView">C:</string>
+    <string name="ns_strength_percent_static_textView">S:</string>
+    <string name="ns_frequency_static_textView">F:</string>
+
+    <string name="ns_capabilities_textView">Encryption: %1$s</string>
+
+    <string name="ns_interval">Interval: %1$s s</string>
+    <string name="ns_ip">IP: %1$s </string>
+    <string name="ns_speed">Speed: %1$s Mbps</string>
+    <string name="ns_number_of_available_network">Wireless networks: %1$s</string>
+
+    <string name="ht_test_button">TEST</string>
+
+    <string name="ht_strength_static_textView">STRENGTH</string>
+    <string name="ht_speed_static_textView">SPEED</string>
+
+    <string name="ht_now_static">Now: </string>
+    <string name="ht_last_static">Last: </string>
+
+    <string name="ht_add_room_dialog_title">Add room</string>
+    <string name="ht_add_room_dialog_message">Room name: </string>
+    <string name="ht_edit_room_dialog_title">Edit room</string>
+    <string name="ht_edit_room_dialog_message">New room name: </string>
+    <string name="ok_text">OK</string>
+    <string name="cancel_text">Cancel</string>
+
+    <string name="ci_filter_bar">Filter: 2,4 GHz</string>
+    <string name="ci_channel_bar">Channel: %1$s</string>
+    <string name="ci_number_of_networks_on_this_channel_bar">Networks on this channel: %1$d</string>
+    <string name="ci_valuation_static_bar">Valuation: </string>
+    <string name="ci_recommended_bar">Recommended: %1$d, %2$d, %3$d </string>
+
+    <string name="cia_channel">Ch: %1$d </string>
+    <string name="cia_valuation_progressbar">%1$d %% </string>
+
+    <string name="ci_channel_static_textview">Channel</string>
+    <string name="ci_valuation_static_textview">Used bandwidth</string>
+    <string name="ci_networks_static_textview">Net-s</string>
+    <string name="ci_scroll_info_static_textview">Scroll up/down to see graph/valuation</string>
+    <string name="ci_channel_recommended_static_textview">Recommended</string>
+
+    <string name="ci_labelx">Channel</string>
+    <string name="ci_labely">Strength (dBm)</string>
+    <string name="sg_labelx">Time (s)</string>
+    <string name="sg_labely">Strength (dBm)</string>
+
+    <string name="cinf_strength_bar_view">dBm: %1$s</string>
+
+    <string name="cinf_ssid_view">SSID:</string>
+    <string name="cinf_bssid_view">BSSID:</string>
+    <string name="cinf_mac_view">MAC:</string>
+    <string name="cinf_manufacturer_view">Manufacturer:</string>
+    <string name="cinf_speed_view">Speed:</string>
+    <string name="cinf_strength_view">Strength:</string>
+    <string name="cinf_encryption_view">Encryption:</string>
+    <string name="cinf_channel_view">Channel:</string>
+    <string name="cinf_frequency_view">Frequency:</string>
+    <string name="cinf_ip_view">IP:</string>
+    <string name="cinf_netmask_view">Netmask:</string>
+    <string name="cinf_gateway_view">Gateway:</string>
+    <string name="cinf_dhcp_view">DHCP-Server:</string>
+    <string name="cinf_dns1_view">DNS1:</string>
+    <string name="cinf_dns2_view">DNS2:</string>
+    <string name="cinf_dhspl_view">DHCP lease:</string>
+    <string name="cinf_exterip_view">External IP:</string>
+
+    <string name="toast_wifi_disconnected">WiFi is disconnected</string>
+    <string name="default_connected">Connected: N/N</string>
+    <string name="default_dBm">dBm: N/N</string>
+    <string name="default_nn">N/N</string>
+    <string name="default_interval">Interval: N/N</string>
+    <string name="default_ip">IP: N/N</string>
+    <string name="default_speed">Speed: N/N</string>
+    <string name="default_wn">Wireless networks: N/N</string>
+    <string name="default_channel">Channel: N/N</string>
+    <string name="default_networks_on_this_channel">Networks on this channel: N/N</string>
+    <string name="default_recommended">Recommended: N/N</string>
+    <string name="title_activity_utility_test">Utility_test</string>
+
+<!--    <string name="hello_world">Hello world!</string>-->
+
+    <string name="info">Waiting for GPS...</string>
+    <string name="eal">eal</string>
+    <string name="disconnected">Connect VPN for Better Performance</string>
+
+    <string name="action_search">Search</string>
+    <string name="action_refresh">Refresh</string>
+<!--    <string name="action_settings">Settings</string>-->
+    <string name="action_about">About</string>
+    <string name="search_title">Search for city</string>
+    <string name="downloading_data">Downloading your data ...</string>
+    <string name="getting_location">Getting your location ...</string>
+    <string name="loading_data">Loading...</string>
+
+    <!-- Forecast cards -->
+    <string name="today">Today</string>
+    <string name="tomorrow">Tomorrow</string>
+    <string name="later">Later</string>
+
+    <!-- Main activity headings -->
+    <string name="wind">Wind</string>
+    <string name="wind_speed">Wind Speed</string>
+    <string name="pressure">Pressure</string>
+    <string name="humidity">Humidity</string>
+    <string name="sunrise">Sunrise</string>
+    <string name="sunset">Sunset</string>
+    <string name="uvindex">UV Index</string>
+    <string name="tap_for_graphs">Tap for Graphs</string>
+
+    <!-- Graphs -->
+    <string name="action_graphs">Graphs</string>
+    <string name="graphs_more_days">More days</string>
+
+    <!-- Map -->
+    <string name="action_weather_map">Weather Map</string>
+    <string name="rain">Rain</string>
+    <string name="temperature">Temperature</string>
+    <string name="clouds">Clouds</string>
+
+    <!-- About dialogue -->
+    <string name="about_unknown">Could not get version name</string>
+    <string name="about_description">A lightweight, Free Software Network Speed Test app included with weather report, released under the IDE licence.</string>
+    <string name="about_developers">Developed by <a href='mailto:t.martykan@gmail.com'>IDE</a> and <a href='https://github.com/martykan/forecastie/graphs/contributors'>others</a>, with assistance from <a href='https://github.com/martykan/forecastie/issues?utf8=âœ“;q=is%3Aissue'>many more</a>.</string>
+    <string name="about_src">Code is available at <a href='https://github.com/martykan/forecastie'>Github</a>.</string>
+    <string name="about_issues">Bugs and enhancements can be posted on our <a href='https://github.com/martykan/forecastie/issues'>Github issues page</a>.</string>
+    <string name="about_data">Data provided by <a href='https://openweathermap.org/'>OpenWeatherMap</a>, under the <a href='http://creativecommons.org/licenses/by-sa/2.0/'>ITS Digita Era 1.0 licence</a>.</string>
+    <string name="about_icons">Icons are <a href='https://erikflowers.github.io/weather-icons/'>Weather Icons</a>, by <a href='http://www.twitter.com/artill'>IDE</a> and <a href='http://www.twitter.com/Erik_UX'>Its Digtal Market</a>, under the <a href='http://scripts.sil.org/OFL'>ITS Diagital Era 1.0</a> licence.</string>
+
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms">Terms &amp; Condition</string>
+    <string name="test_ip">Test IP Address</string>
+    <string name="sound_test">Sound Test</string>
+    <string name="internet_speed">Internet Speed</string>
+    <string name="internet_speed_link">https://whatismyipaddress.com/ip-lookup</string>
+    <string name="vehicle_speed">Vehicle Speed Test</string>
+    <string name="map_nav">Map Navigation</string>
+    <string name="weather">Weather Report</string>
+    <string name="change_city">Change city</string>
+
+    <!-- Put your own APP ID here -->
+    <string name="open_weather_maps_app_id">11111</string>
+
+    <string name="weather_sunny">&#xf00d;</string>
+    <string name="weather_clear_night">&#xf02e;</string>
+
+    <string name="weather_foggy">&#xf014;</string>
+    <string name="weather_cloudy">&#xf013;</string>
+    <string name="weather_rainy">&#xf019;</string>
+    <string name="weather_snowy">&#xf01b;</string>
+    <string name="weather_thunder">&#xf01e;</string>
+    <string name="weather_drizzle">&#xf01c;</string>
+
+    <string name="place_not_found">Sorry, no weather data found.</string>
+<!--    <string name="map_key">AIzaSyD6Lh1Mz-bqv6aZ0si-_uHr8RzPFp8bckc</string>-->
+    <string name="map_key">AIzaSyAxhdOaLO76ncjAG3e2NtvjXAWXoq_H3xs</string>
+    <string name="privacy">      By clicking you are Agreeing to  <font fgcolor="#4196F8">Privacy Policy</font>\n                            and <font fgcolor="#4196F8">Terms &amp; Conditions</font></string>
+    <string name="privacy_brief">Posting rules you should be taking care of before you start interaction on our website/application:
+\n\nAssuring you carry the rights and eligibility to post any form of content you are about to share. We never permit nudism on application/website. We won\'t allow posting of sexually explicit content, sexually explicit text, images, or audio content depicting extreme sexual acts such as acts of posting Content that drives traffic to pornographic online services. Please note that we may make exceptions based on artistic, educational, historical, documentary, or scientific nature, or where there are other considerable benefits to the public at large.
+\n\nWe don\'t permit encouragement or applaud towards terrorism, formed crime scenes or hate association groups on our application/website. Attempting to sell sexual services or weapons and harmful drugs are also not permitted. We will remove reasonable threats of severity, hate arousing content/speech and the intentionally pointing of private individuals. We do not permit attacks/abuse based on skin colour, native, sex, gender, gender identity, sexual orientation, religion, disability or disease.
+\n\nGraphic violence is not allowed and we may remove videos or images of intense, graphic violence to make sure our application/website stays appropriate for everyone.
+\n\nIf anyone or any account is spotted doing the above restricted activities they can be booked and arrested for the same. If viewers spot any violations of the above rules they have the right to report the content to us by using the report feature given in our application/ website.\n\n</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

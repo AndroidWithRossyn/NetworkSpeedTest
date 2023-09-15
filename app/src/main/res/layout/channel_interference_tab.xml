@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_dark_material_dark"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/default_background"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/ci_connected_textview"
+                style="@style/HT_FontBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:padding="2dp"
+                android:singleLine="true"
+                android:text="@string/default_connected" />
+
+            <TextView
+                android:id="@+id/ns_filter_textview"
+                style="@style/HT_FontBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="2dp"
+                android:singleLine="true"
+                android:text="@string/ci_filter_bar" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/ci_channel_textview"
+                style="@style/HT_FontBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:padding="2dp"
+                android:singleLine="true"
+                android:text="@string/default_channel" />
+
+            <TextView
+                android:id="@+id/ci_numbers_of_networks_on_this_ch_textview"
+                style="@style/HT_FontBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="2dp"
+                android:singleLine="true"
+                android:text="@string/default_networks_on_this_channel" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/ci_valuation_bar_static_textview"
+                style="@style/HT_FontBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:padding="2dp"
+                android:singleLine="true"
+                android:text="@string/ci_valuation_static_bar" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ProgressBar
+                    android:id="@+id/ci_valuation_progressbar"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:paddingLeft="7dp"
+                    android:paddingRight="10dp"
+                    android:progressDrawable="@drawable/green_progress_bar"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/ci_valuation_progressbar_textView"
+                    style="@style/Standard_Font"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="#00000000"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/ci_recommended_textview"
+                style="@style/HT_FontBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:padding="2dp"
+                android:singleLine="true"
+                android:text="@string/default_recommended" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ci_scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbarStyle="insideInset">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ci_channel_chart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:orientation="vertical" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/dark_yellow" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+
+                <TextView
+                    android:id="@+id/ci_channel_static_textview"
+                    style="@style/HT_FontBar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.15"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:singleLine="true"
+                    android:text="@string/ci_channel_static_textview" />
+
+                <TextView
+                    android:id="@+id/ci_valuation_static_textview"
+                    style="@style/HT_FontBar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:singleLine="true"
+                    android:text="@string/ci_valuation_static_textview" />
+
+                <TextView
+                    android:id="@+id/ci_channel_recommended_static_textview"
+                    style="@style/HT_FontBar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.35"
+                    android:gravity="right"
+                    android:padding="2dp"
+                    android:paddingRight="4dp"
+                    android:singleLine="true"
+                    android:text="@string/ci_channel_recommended_static_textview" />
+
+                <TextView
+                    android:id="@+id/ci_networks_static_textview"
+                    style="@style/HT_FontBar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:gravity="left"
+                    android:padding="0dp"
+                    android:singleLine="true"
+                    android:text="@string/ci_networks_static_textview" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/dark_yellow" />
+
+            <ListView
+                android:id="@+id/valuation_channels_listview"
+                style="@style/NetworksListStyle"
+                android:layout_width="match_parent"
+                android:layout_height="290dp"
+                android:divider="@drawable/divider"
+                android:dividerHeight="1px"
+                android:padding="5dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/dark_yellow" />
+
+        <TextView
+            android:id="@+id/ci_scroll_info_static_textview"
+            style="@style/HT_FontBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="@string/ci_scroll_info_static_textview" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/dark_yellow" />
+
+    </LinearLayout>
+
+</LinearLayout>

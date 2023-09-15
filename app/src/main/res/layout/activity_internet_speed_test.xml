@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".activity.InternetSpeedTestActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent">
+
+            <LinearLayout
+                android:id="@+id/ll1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_white_arrow" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="start"
+                    android:text="@string/internet_speed"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <ScrollView
+            android:id="@+id/scrl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/toolbar1"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/crd1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="10dp"
+                        app:cardBackgroundColor="@android:color/transparent"
+                        app:cardElevation="0dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="50dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_toLeftOf="@+id/title"
+                                    android:src="@drawable/get_country" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:gravity="start"
+                                        android:text="Location"
+                                        android:textColor="@color/gray"
+                                        android:textSize="12dp"
+                                        android:textStyle="bold" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+
+                                        <TextView
+                                            android:id="@+id/tv_loc1"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_vertical"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_marginTop="2dp"
+                                            android:gravity="start"
+                                            android:text=""
+                                            android:textColor="@color/white"
+                                            android:textSize="15dp"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:id="@+id/comma"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_vertical"
+                                            android:layout_marginLeft="2dp"
+                                            android:layout_marginTop="2dp"
+                                            android:gravity="start"
+                                            android:text=","
+                                            android:textColor="@color/white"
+                                            android:textSize="15dp"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:id="@+id/tv_loc2"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_vertical"
+                                            android:layout_marginLeft="3dp"
+                                            android:layout_marginTop="2dp"
+                                            android:gravity="start"
+                                            android:text=""
+                                            android:textColor="@color/white"
+                                            android:textIsSelectable="true"
+                                            android:textSize="15dp"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="50dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_toLeftOf="@+id/title"
+                                    android:src="@drawable/server" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:gravity="start"
+                                        android:text="Server"
+                                        android:textColor="@color/gray"
+                                        android:textSize="12dp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/sim"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="2dp"
+                                        android:gravity="start"
+                                        android:text=""
+                                        android:textColor="@color/white"
+                                        android:textIsSelectable="true"
+                                        android:textSize="15dp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="50dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_toLeftOf="@+id/title"
+                                    android:src="@drawable/ip" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:gravity="start"
+                                        android:text="IP Address"
+                                        android:textColor="@color/gray"
+                                        android:textSize="12dp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/get_ip"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="2dp"
+                                        android:gravity="start"
+                                        android:text=""
+                                        android:textColor="@color/white"
+                                        android:textIsSelectable="true"
+                                        android:textSize="15dp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                    <RelativeLayout
+                        android:id="@+id/rl1"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_below="@+id/crd1">
+
+                        <ImageView
+                            android:id="@+id/imageView"
+                            android:layout_width="match_parent"
+                            android:layout_height="300dp"
+                            app:srcCompat="@drawable/main7" />
+
+
+                        <ImageView
+                            android:id="@+id/barImageView"
+                            android:layout_width="match_parent"
+                            android:layout_height="300dp"
+                            app:srcCompat="@drawable/bar13" />
+
+                        <!--            <androidx.cardview.widget.CardView-->
+                        <!--                android:layout_width="match_parent"-->
+                        <!--                android:layout_height="50dp"-->
+                        <!--                android:layout_alignParentStart="true"-->
+                        <!--                android:layout_alignParentBottom="true"-->
+                        <!--                app:cardCornerRadius="10dp"-->
+                        <!--                app:cardElevation="10dp"-->
+                        <!--                android:id="@+id/buttoncont"-->
+                        <!--                >-->
+
+
+                        <!--                <Button-->
+                        <!--                    android:id="@+id/startButton"-->
+                        <!--                    style="@style/Widget.AppCompat.Button.Colored"-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="match_parent"-->
+                        <!--                    android:layout_alignParentBottom="true"-->
+                        <!--                    android:layout_alignParentStart="true"-->
+                        <!--                    android:shadowRadius="15"-->
+                        <!--                    android:text="Begin Test"-->
+                        <!--                    android:textAllCaps="false"-->
+                        <!--                    android:textColor="@android:color/background_light"-->
+                        <!--                    android:textSize="16sp" />-->
+                        <!--            </androidx.cardview.widget.CardView>-->
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll2"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_below="@+id/rl1"
+                        android:layout_margin="10dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/blank_one"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="90dp"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/blank_one"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/img_download"
+                                    android:layout_width="55dp"
+                                    android:layout_height="55dp"
+                                    app:srcCompat="@drawable/download" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/tx2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Download"
+                                        android:textColor="@color/gray"
+                                        android:textSize="12sp"
+                                        android:textStyle="normal|bold" />
+
+                                    <TextView
+                                        android:id="@+id/downloadTextView"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="0 Mbps"
+                                        android:textColor="@android:color/background_light"
+                                        android:textSize="15sp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="90dp"
+                            android:layout_margin="5dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/img_upload"
+                                    android:layout_width="55dp"
+                                    android:layout_height="55dp"
+                                    app:srcCompat="@drawable/upload" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/tx1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Upload"
+                                        android:textColor="@color/gray"
+                                        android:textSize="12sp"
+                                        android:textStyle="normal|bold" />
+
+                                    <TextView
+                                        android:id="@+id/uploadTextView"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="0 Mbps"
+                                        android:textColor="@android:color/background_light"
+                                        android:textSize="15sp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <!--                    <LinearLayout-->
+                        <!--                        android:layout_width="0dp"-->
+                        <!--                        android:layout_height="match_parent"-->
+                        <!--                        android:layout_weight="1"-->
+                        <!--                        android:orientation="vertical">-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:id="@+id/textView"-->
+                        <!--                            android:layout_width="match_parent"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:layout_marginTop="15dp"-->
+                        <!--                            android:text="PING"-->
+                        <!--                            android:textAlignment="center"-->
+                        <!--                            android:textColor="@color/white"-->
+                        <!--                            android:textSize="12sp"-->
+                        <!--                            android:textStyle="normal|bold" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:id="@+id/pingTextView"-->
+                        <!--                            android:layout_width="match_parent"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:text="0 ms"-->
+                        <!--                            android:textAlignment="center"-->
+                        <!--                            android:textColor="@android:color/background_light"-->
+                        <!--                            android:textSize="20sp" />-->
+
+                        <!--                        <LinearLayout-->
+                        <!--                            android:id="@+id/chartPing"-->
+                        <!--                            android:layout_width="match_parent"-->
+                        <!--                            android:layout_height="match_parent"-->
+                        <!--                            android:orientation="vertical">-->
+
+                        <!--                        </LinearLayout>-->
+
+                        <!--                    </LinearLayout>-->
+
+                        <!--                    <LinearLayout-->
+                        <!--                        android:layout_width="0dp"-->
+                        <!--                        android:layout_height="match_parent"-->
+                        <!--                        android:layout_weight="1"-->
+                        <!--                        android:orientation="vertical">-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:id="@+id/textView2"-->
+                        <!--                            android:layout_width="match_parent"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:layout_marginTop="15dp"-->
+                        <!--                            android:text="DOWNLOAD"-->
+                        <!--                            android:textAlignment="center"-->
+                        <!--                            android:textColor="@color/white"-->
+                        <!--                            android:textSize="12sp"-->
+                        <!--                            android:textStyle="normal|bold" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:id="@+id/downloadTextView"-->
+                        <!--                            android:layout_width="match_parent"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:text="0 Mbps"-->
+                        <!--                            android:textAlignment="center"-->
+                        <!--                            android:textColor="@android:color/background_light"-->
+                        <!--                            android:textSize="20sp" />-->
+
+                        <!--                        <LinearLayout-->
+                        <!--                            android:id="@+id/chartDownload"-->
+                        <!--                            android:layout_width="match_parent"-->
+                        <!--                            android:layout_height="match_parent"-->
+                        <!--                            android:orientation="vertical" />-->
+                        <!--                    </LinearLayout>-->
+
+                        <!--                    <LinearLayout-->
+                        <!--                        android:layout_width="0dp"-->
+                        <!--                        android:layout_height="match_parent"-->
+                        <!--                        android:layout_weight="1"-->
+                        <!--                        android:orientation="vertical">-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:id="@+id/textView3"-->
+                        <!--                            android:layout_width="match_parent"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:layout_marginTop="15dp"-->
+                        <!--                            android:text="UPLOAD"-->
+                        <!--                            android:textAlignment="center"-->
+                        <!--                            android:textColor="@color/white"-->
+                        <!--                            android:textSize="12sp"-->
+                        <!--                            android:textStyle="normal|bold" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:id="@+id/uploadTextView"-->
+                        <!--                            android:layout_width="match_parent"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:text="0 Mbps"-->
+                        <!--                            android:textAlignment="center"-->
+                        <!--                            android:textColor="@android:color/background_light"-->
+                        <!--                            android:textSize="20sp" />-->
+
+                        <!--                        <LinearLayout-->
+                        <!--                            android:id="@+id/chartUpload"-->
+                        <!--                            android:layout_width="match_parent"-->
+                        <!--                            android:layout_height="match_parent"-->
+                        <!--                            android:orientation="vertical">-->
+
+                        <!--                        </LinearLayout>-->
+                        <!--                    </LinearLayout>-->
+
+                    </LinearLayout>
+
+
+
+
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar1"
+            android:layout_above="@id/rl2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent">
+
+            <Button
+                android:id="@+id/startButton"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/blank"
+                android:elevation="0dp"
+                android:shadowRadius="15"
+                android:text="Begin Test"
+                android:textAllCaps="false"
+                android:textColor="@android:color/background_light"
+                android:textSize="16sp" />
+        </androidx.appcompat.widget.Toolbar>
+        <RelativeLayout
+            android:id="@+id/rl2"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/native_ads"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</FrameLayout>

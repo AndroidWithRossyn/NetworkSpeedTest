@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_dark_material_dark"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/default_background"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/sg_connected_textview"
+            style="@style/HT_FontBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:padding="2dp"
+            android:singleLine="true"
+            android:text="@string/default_connected" />
+
+        <TextView
+            android:id="@+id/sg_filter"
+            style="@style/HT_FontBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="2dp"
+            android:singleLine="true"
+            android:text="@string/ci_filter_bar" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/sg_channel_chart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" />
+
+</LinearLayout>

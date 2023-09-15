@@ -1,0 +1,190 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#391295</item>
+        <item name="colorPrimaryDark">#391295</item>
+        <item name="colorAccent">#391295</item>
+        <item name="colorBackground">@color/colorBackground</item>
+        <item name="colorTintedBackground">@color/colorTintedBackground</item>
+        <item name="colorControlActivated">#3A0E8C</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@android:color/transparent</item>
+    </style>
+    <style name="Widget.Styled.ActionBar" parent="Widget.AppCompat.Light.ActionBar.Solid">
+        <item name="android:displayOptions">useLogo|showTitle</item>
+        <item name="displayOptions">useLogo|showTitle</item>
+        <item name="android:titleTextStyle">@style/AppTheme.ActionBar.TitleText</item>
+        <item name="titleTextStyle">@style/AppTheme.ActionBar.TitleText</item>
+        <item name="android:subtitleTextStyle">@style/AppTheme.ActionBar.SubTitleText</item>
+        <item name="subtitleTextStyle">@style/AppTheme.ActionBar.SubTitleText</item>
+        <item name="android:height">@dimen/bar_height</item>
+        <item name="height">@dimen/bar_height</item>
+        <item name="android:icon">@mipmap/ic_launcher</item>
+        <item name="icon">@mipmap/ic_launcher</item>
+        <item name="android:background">@drawable/default_actionbar</item>
+        <item name="background">@drawable/default_actionbar</item>
+    </style>
+
+    <style name="ActionBarTabStyle" parent="Widget.AppCompat.Light.ActionBar.TabView">
+        <item name="android:paddingLeft">2dip</item>
+        <item name="android:paddingRight">2dip</item>
+        <item name="android:minWidth">40dip</item>
+    </style>
+
+    <style name="AppTheme.ActionBar.TitleText" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">@dimen/bar_title_text_size</item>
+    </style>
+
+    <style name="AppTheme.ActionBar.SubTitleText" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">@dimen/bar_subtitle_text_size</item>
+    </style>
+
+    <style name="NetworksListStyle">
+
+    </style>
+
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/dark_yellow</item>
+    </style>
+
+    <style name="Standard_Font" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">10dp</item>
+    </style>
+
+    <style name="NT_FontBSSIDSSID" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/material_deep_teal_500</item>
+        <item name="android:textSize">11dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="HT_FontRoomName" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/dark_white</item>
+        <item name="android:textSize">17dp</item>
+    </style>
+
+    <style name="HT_FontStaticStrengthSpeed" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/dark_yellow</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+    <style name="HT_FontSpeedStrengthNow" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/dark_yellow</item>
+        <item name="android:textSize">13dp</item>
+    </style>
+
+    <style name="HT_FontSpeedStrengthLast" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/material_deep_teal_500</item>
+        <item name="android:textSize">10dp</item>
+    </style>
+
+    <style name="HT_FontBar" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">10dp</item>
+    </style>
+
+    <style name="CINF_Font_dBm" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/dark_white</item>
+        <item name="android:textSize">13dp</item>
+    </style>
+
+    <style name="CINF_Font_Info" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">11dp</item>
+    </style>
+
+    <style name="DefaultButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/default_button_selector</item>
+    </style>
+
+    <style name="AppTheme.Dark" parent="Theme.AppCompat">
+        <item name="colorPrimary">#391295</item>
+        <item name="colorPrimaryDark">#391295</item>
+        <item name="colorAccent">#391295</item>
+        <item name="colorBackground">@color/darkTheme_colorBackground</item>
+        <item name="colorTintedBackground">@color/darkTheme_colorTintedBackground</item>
+        <item name="colorControlActivated">#391295</item>
+    </style>
+
+    <style name="dialog">
+        <item name="background">@color/white</item>
+        <item name="android:statusBarColor">@color/black</item>
+    </style>
+
+    <style name="AppTheme.Black" parent="AppTheme.Dark">
+        <item name="android:colorBackground">@color/blackTheme_colorBackground</item>
+        <item name="colorTintedBackground">@color/blackTheme_colorTintedBackground</item>
+        <item name="colorControlActivated">#391295</item>
+    </style>
+
+    <style name="AppTheme.Classic" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/classic_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/classic_colorPrimaryDark</item>
+        <item name="colorAccent">@color/classic_colorAccent</item>
+        <item name="colorBackground">@color/classic_colorBackground</item>
+        <item name="colorTintedBackground">@color/classic_colorTintedBackground</item>
+    </style>
+
+    <style name="AppTheme.Classic.Dark" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/classic_darkTheme_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/classic_darkTheme_colorPrimaryDark</item>
+        <item name="colorAccent">@color/classic_darkTheme_colorAccent</item>
+        <item name="colorBackground">@color/classic_darkTheme_colorBackground</item>
+        <item name="colorTintedBackground">@color/classic_darkTheme_colorTintedBackground</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+    </style>
+
+    <style name="AppTheme.Classic.Black" parent="AppTheme.Classic.Dark">
+        <item name="android:colorBackground">@color/classic_blackTheme_colorBackground</item>
+        <item name="colorTintedBackground">@color/classic_blackTheme_colorTintedBackground</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Classic" parent="AppTheme.Classic">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Dark" parent="AppTheme.Dark">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Classic.Dark" parent="AppTheme.Classic.Dark">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Black" parent="AppTheme.Black">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Classic.Black" parent="AppTheme.Classic.Black">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.PopupOverlay.Dark" parent="ThemeOverlay.AppCompat" />
+
+    <style name="AppTheme.PopupOverlay.Black" parent="ThemeOverlay.AppCompat">
+      <item name="android:colorBackground">@color/blackTheme_colorBackground</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash</item>
+    </style>
+
+</resources>

@@ -1,0 +1,111 @@
+plugins {
+    id 'com.android.application'
+}
+def lifecycleVersion = '2.2.0'
+
+android {
+
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.networkdigitally.analyzertools.speedtool"
+        minSdk 24
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    buildFeatures {
+        viewBinding true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildToolsVersion '30.0.2'
+}
+
+dependencies {
+    implementation 'androidx.work:work-runtime-ktx:2.7.0-alpha05'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.0-beta1'
+    implementation 'com.github.neopixl:PixlUI:v1.1.0'
+    def fragment_version = "1.5.2"
+    // Java language implementation
+    implementation "androidx.fragment:fragment:$fragment_version"
+    // Kotlin
+    implementation "androidx.fragment:fragment-ktx:$fragment_version"
+    // Testing Fragments in Isolation
+    debugImplementation "androidx.fragment:fragment-testing:$fragment_version"
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.legacy:legacy-support-core-ui:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation files('libs/achartengine-1.2.0.jar')
+    implementation 'com.cardiomood.android:android-widgets:0.1.1'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.24'
+    implementation 'com.airbnb.android:lottie:5.0.3'
+    implementation 'in.unicodelabs.sorbh:kdgaugeview:1.0.0'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.24'
+    implementation 'hanks.xyz:htextview-library:0.1.5'
+    implementation files('libs/GraphView-4.2.1.jar')
+    implementation 'com.github.anastr:speedviewlib:1.6.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.loopj.android:android-async-http:1.4.11'
+    implementation 'com.google.android.gms:play-services-location:20.0.0'
+    implementation 'com.google.android.gms:play-services-maps:18.1.0'
+    implementation 'com.google.android.gms:play-services-ads:21.2.0'
+    implementation 'fr.bmartel:jspeedtest:1.32.1'
+    implementation 'com.jignesh13.speedometer:speedometer:1.0.0'
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation project(path: ':AdsSdk')
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.gms:play-services-contextmanager:9.4.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation "androidx.core:core-ktx:1.9.0"
+    implementation 'com.android.volley:volley:1.2.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.codemybrainsout.rating:ratingdialog:1.0.8'
+    implementation files('libs/achartengine-1.2.0.jar')
+    //noinspection GradleCompatible
+    implementation 'com.google.android.material:material:1.6.1'
+    implementation 'com.github.bumptech.glide:glide:4.13.2'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.13.2'
+    implementation 'com.wang.avi:library:2.1.3'
+    implementation 'androidx.work:work-runtime:2.7.1'
+    implementation 'com.github.massoudss:waveformSeekBar:5.0.1'
+    implementation 'com.github.lincollincol:amplituda:2.1.4'
+    testImplementation "org.robolectric:robolectric:4.4"
+    testImplementation "androidx.test.ext:junit:1.1.3"
+    testImplementation "androidx.test:rules:1.4.0"
+    testImplementation "org.mockito:mockito-core:3.3.3"
+    /** Lifecycle */
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycleVersion"
+    //noinspection LifecycleAnnotationProcessorWithJava8
+    annotationProcessor "androidx.lifecycle:lifecycle-compiler:$lifecycleVersion"
+    /** other dependencies */
+    implementation "com.diogobernardino:williamchart:2.2"
+    implementation "androidx.core:core:1.9.0"
+    implementation "androidx.recyclerview:recyclerview:1.2.1"
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
+    implementation 'androidx.work:work-runtime:2.7.1'
+//    implementation 'com.google.firebase:firebase-messaging:23.0.8'
+    implementation 'androidx.work:work-runtime-ktx:2.7.1'
+    implementation 'com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.3'
+    implementation 'androidx.work:work-runtime:2.7.1'
+
+}

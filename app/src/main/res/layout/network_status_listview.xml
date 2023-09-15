@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_material_dark"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.8"
+            android:paddingLeft="10dp"
+            android:paddingTop="7dp"
+            android:paddingRight="2dp"
+            android:paddingBottom="4dp">
+
+            <TextView
+                android:id="@+id/ssid__bssid_textView"
+                style="@style/NT_FontBSSIDSSID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:singleLine="true"
+                android:text="" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:orientation="horizontal"
+            android:paddingTop="7dp"
+            android:paddingRight="2dp">
+
+            <TextView
+                android:id="@+id/frequency_static_textView"
+                style="@style/Standard_Font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:singleLine="true"
+                android:text="@string/ns_frequency_static_textView" />
+
+            <TextView
+                android:id="@+id/frequency_textView"
+                style="@style/Standard_Font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="2dp"
+                android:singleLine="true"
+                android:text="" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/ns_wifi_strength_imageview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:padding="2dp"
+            android:src="@drawable/wireless_0" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="0.8">
+
+                <TextView
+                    android:id="@+id/capabilities_textView"
+                    style="@style/Standard_Font"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:singleLine="true"
+                    android:text="@string/ns_capabilities_textView" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/channel_static_textView"
+                        style="@style/Standard_Font"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/ns_channel_static_textView" />
+
+                    <TextView
+                        android:id="@+id/channel_textView"
+                        style="@style/Standard_Font"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:singleLine="true"
+                        android:text="" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="0.8">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6">
+
+                    <ProgressBar
+                        android:id="@+id/ns_quality_progressbar"
+                        style="@android:style/Widget.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:paddingLeft="7dp"
+                        android:paddingRight="10dp"
+                        android:progressDrawable="@drawable/blue_progress_bar"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/strength_percent_progressbar_textView"
+                        style="@style/Standard_Font"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="#00000000"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2">
+
+                    <TextView
+                        android:id="@+id/strength_percent_static_textView"
+                        style="@style/Standard_Font"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/ns_strength_percent_static_textView" />
+
+                    <TextView
+                        android:id="@+id/strength_percent_textView"
+                        style="@style/Standard_Font"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:singleLine="true"
+                        android:text="" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
